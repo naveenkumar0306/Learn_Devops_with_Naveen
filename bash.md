@@ -9,6 +9,7 @@
 ```bash
 [naveen.kandhasamy@personalpc01 AKA pc-cbe01 ~]$ uname -a     // Displays the system information of your Linux computer
 Linux personalpc01.bash.com 3.10.0-1160.21.1.el7.x86_64 #1 SMP Mon Feb 22 18:03:13 EST 2021 x86_64 x86_64 x86_64 GNU/Linux
+```
 // Linux - Kernal Name
 // personalpc01.bash.com - Hostnmae
 // 3.10.0-1160.21.1.el7.x86_64 - Kernal Release
@@ -17,7 +18,7 @@ Linux personalpc01.bash.com 3.10.0-1160.21.1.el7.x86_64 #1 SMP Mon Feb 22 18:03:
 // x86_64 - Processor Type
 // x86_64 - hardware platform
 // GNU/Linux - Operating System
-```
+
 
 #### hostname
 ```bash
