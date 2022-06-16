@@ -1,8 +1,9 @@
 # Learn Bash Shell Scripting
 ## #!/bin/bash
 
+-  [File_system_hierarchy](https://github.com/naveenkumar0306/bash_shell_scripting/blob/main/bash.md#File_system_hierarchy)
 -  [uname](https://github.com/naveenkumar0306/bash_shell_scripting/blob/main/bash.md#uname)
-    -  [Print_the_system_information_of_your_Linux_computer](https://github.com/naveenkumar0306/bash_shell_scripting/blob/main/bash.md#Print_the_system_information_of_your_Linux_computer)
+    - [Print_the_system_information_of_your_Linux_computer](https://github.com/naveenkumar0306/bash_shell_scripting/blob/main/bash.md#Print_the_system_information_of_your_Linux_computer)
 -  [hostname](https://github.com/naveenkumar0306/bash_shell_scripting/blob/main/bash.md#hostname)
     - [Print_hostname](https://github.com/naveenkumar0306/bash_shell_scripting/blob/main/bash.md#Print_hostname)
     - [Print_ipaddress](https://github.com/naveenkumar0306/bash_shell_scripting/blob/main/bash.md#Print_ipaddress)
@@ -10,6 +11,23 @@
     - [print_list_of_environment_variables](https://github.com/naveenkumar0306/bash_shell_scripting/blob/main/bash.md#print_list_of_environment_variables)
     - [set_unset_environment_variable](https://github.com/naveenkumar0306/bash_shell_scripting/blob/main/bash.md#set_unset_environment_variable)
     - [Persisting_Environment_Variables_for_a_User](https://github.com/naveenkumar0306/bash_shell_scripting/blob/main/bash.md#Persisting_Environment_Variables_for_a_User)
+
+### File_system_hierarchy
+```
+/bin        // Contains the system Binaries
+/home       // Contains user’s Home directory
+/dev        // Device files like block and character devices
+/etc        // System Configuration
+/lib        // Shared library and kernel modules
+/lib64      // Contains 64-bit version shared library
+/var        // Data which varies over time
+/sbin       // Binary utilities for which only root or system administrator has access
+/mnt        // Mount point for a filesystem
+/tmp        // Used for storing temporary data and files
+/proc       // Kernel data structure mounted as filesystem. Only applicable to Linux based OS
+/boot       // Contains the initramfs and kernel image.
+/sys        //Kernel data structure for different hardware and device like Block Device, Firmware, ACPI etc. Applicable for Linux based OS only.
+```
 
 ### uname
 #### Print_the_system_information_of_your_Linux_computer
@@ -82,6 +100,7 @@ PATH=/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/puppetlabs/bin:/home
 [naveen.kandhasamy@personalpc01 AKA pc-cbe01 bin]$ echo $PATH                                               // print updated PATH environment varaiable(/opt/bt/java/jdk1.8.0_311-x86_64/bin/ is appended to the PATH varaible)
 PATH=/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/puppetlabs/bin:/home/naveen.kandhasamy/.local/bin:/home/naveen.kandhasamy/bin:/opt/bt/java/jdk1.8.0_311-x86_64/bin/
 ```
+
 #### Persisting_Environment_Variables_for_a_User
 ```
 // When an environment variable is set from the shell using the export command, its existence ends when the user’s sessions ends. This is problematic when we need the variable to persist across sessions. To make an environment persistent for a user’s environment, we export the variable from the user’s profile script.
@@ -91,3 +110,5 @@ export JAVA_HOME=/opt/bt/java/jdk1.8.0_311-x86_64                               
 // Adding the environment variable to a user’s bash profile alone will not export it automatically. However, the variable will be exported the next time the user logs in
 [naveen.kandhasamy@personalpc01 AKA pc-cbe01 bin]$ source ~/.bash_profile           // To immediately apply all changes to bash_profile
 ```
+
+
