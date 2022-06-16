@@ -2,6 +2,7 @@
 ## #!/bin/bash
 
 -  [File_system_hierarchy](https://github.com/naveenkumar0306/bash_shell_scripting/blob/main/bash.md#File_system_hierarchy)
+-  [ls](https://github.com/naveenkumar0306/bash_shell_scripting/blob/main/bash.md#ls)
 -  [uname](https://github.com/naveenkumar0306/bash_shell_scripting/blob/main/bash.md#uname)
     - [Print_the_system_information_of_your_Linux_computer](https://github.com/naveenkumar0306/bash_shell_scripting/blob/main/bash.md#Print_the_system_information_of_your_Linux_computer)
 -  [hostname](https://github.com/naveenkumar0306/bash_shell_scripting/blob/main/bash.md#hostname)
@@ -27,6 +28,42 @@
 /proc       // Kernel data structure mounted as filesystem. Only applicable to Linux based OS
 /boot       // Contains the initramfs and kernel image.
 /sys        //Kernel data structure for different hardware and device like Block Device, Firmware, ACPI etc. Applicable for Linux based OS only.
+```
+
+### ls
+```
+[naveen.kandhasamy@personalpc01 AKA pc-cbe01 /]$ ls                     // List files and folders in the current directory
+bin  boot  dev  etc  home  lib  lib64  media  mnt  opt  proc  root  run  sbin  srv  sys  tmp  usr  var
+
+[naveen.kandhasamy@personalpc01 AKA pc-cbe01 /]$ ls /var/               // List files and folders in the /var directory
+adm    crash  empty  gopher    lib    lock  mail  nis  ossec     run    tmp
+
+[naveen.kandhasamy@personalpc01 AKA pc-cbe01 /]$ ls -la                 // Long listing files and folders in the current directory including hidden files
+total 540
+dr-xr-xr-x.   17 root root    244 Apr  7  2021 .
+dr-xr-xr-x.   17 root root    244 Apr  7  2021 ..
+-rw-r--r--     1 root root      0 Apr  7  2021 .autorelabel
+lrwxrwxrwx.    1 root root      7 Apr  7  2021 bin -> usr/bin
+dr-xr-xr-x.    5 root root   4096 May 12 03:23 boot
+
+[naveen.kandhasamy@personalpc01 AKA pc-cbe01 /]$ ls -lia                // Long listing files and folders in the current directory including hidden files with inode value
+total 540
+     64 dr-xr-xr-x.   17 root root    244 Apr  7  2021 .
+     64 dr-xr-xr-x.   17 root root    244 Apr  7  2021 ..
+ 334358 -rw-r--r--     1 root root      0 Apr  7  2021 .autorelabel
+    109 lrwxrwxrwx.    1 root root      7 Apr  7  2021 bin -> usr/bin
+
+[naveen.kandhasamy@personalpc01 AKA pc-cbe01 /]$ ls -lrth               // Long listing files and folders in the current directory by reverse sorting last modified files with human readable file size(4.0k - reads 4killobytes)
+total 540K
+drwxr-xr-x.    2 root root    6 Dec 14  2017 srv
+drwxr-xr-x.    2 root root    6 Dec 14  2017 mnt
+drwxr-xr-x.    2 root root    6 Dec 14  2017 media
+lrwxrwxrwx.    1 root root    7 Apr  7  2021 bin -> usr/bin
+lrwxrwxrwx.    1 root root    9 Apr  7  2021 lib64 -> usr/lib64
+lrwxrwxrwx.    1 root root    7 Apr  7  2021 lib -> usr/lib
+lrwxrwxrwx.    1 root root    8 Apr  7  2021 sbin -> usr/sbin
+drwxr-xr-x.   13 root root  155 Apr  7  2021 usr
+drwxr-xr-x.   21 root root 4.0K Apr 15  2021 var
 ```
 
 ### uname
