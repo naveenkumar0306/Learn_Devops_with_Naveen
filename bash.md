@@ -9,6 +9,7 @@
 -  [Environment_Variable](https://github.com/naveenkumar0306/bash_shell_scripting/blob/main/bash.md#Environment_Variable)
     - [print_list_of_environment_variables](https://github.com/naveenkumar0306/bash_shell_scripting/blob/main/bash.md#print_list_of_environment_variables)
     - [set_unset_environment_variable](https://github.com/naveenkumar0306/bash_shell_scripting/blob/main/bash.md#set_unset_environment_variable)
+    - [Persisting_Environment_Variables_for_a_User](https://github.com/naveenkumar0306/bash_shell_scripting/blob/main/bash.md#Persisting_Environment_Variables_for_a_User)
 
 ### uname
 #### Print_the_system_information_of_your_Linux_computer
@@ -80,4 +81,13 @@ PATH=/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/puppetlabs/bin:/home
 [naveen.kandhasamy@personalpc01 AKA pc-cbe01 bin]$ export PATH=$PATH:/opt/bt/java/jdk1.8.0_311-x86_64/bin/  // append JAVA bin path to the PATH varaiable
 [naveen.kandhasamy@personalpc01 AKA pc-cbe01 bin]$ echo $PATH                                               // print updated PATH environment varaiable(/opt/bt/java/jdk1.8.0_311-x86_64/bin/ is appended to the PATH varaible)
 PATH=/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/puppetlabs/bin:/home/naveen.kandhasamy/.local/bin:/home/naveen.kandhasamy/bin:/opt/bt/java/jdk1.8.0_311-x86_64/bin/
+```
+#### Persisting_Environment_Variables_for_a_User
+```
+// When an environment variable is set from the shell using the export command, its existence ends when the user’s sessions ends. This is problematic when we need the variable to persist across sessions. To make an environment persistent for a user’s environment, we export the variable from the user’s profile script.
+
+[naveen.kandhasamy@personalpc01 AKA pc-cbe01 bin]$ vi ~/.bash_profile               // Open the current user’s profile into a text editor
+export JAVA_HOME=/opt/bt/java/jdk1.8.0_311-x86_64                                   // Add the export command for every environment variable you want to persist and save changes.
+// Adding the environment variable to a user’s bash profile alone will not export it automatically. However, the variable will be exported the next time the user logs in
+[naveen.kandhasamy@personalpc01 AKA pc-cbe01 bin]$ source ~/.bash_profile           // To immediately apply all changes to bash_profile
 ```
