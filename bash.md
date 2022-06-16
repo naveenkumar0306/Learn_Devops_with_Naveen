@@ -12,14 +12,12 @@ Linux personalpc01.bash.com 3.10.0-1160.21.1.el7.x86_64 #1 SMP Mon Feb 22 18:03:
 // Linux - Kernal Name
 // personalpc01.bash.com - Hostnmae
 // 3.10.0-1160.21.1.el7.x86_64 - Kernal Release
-// #1 SMP Mon Feb 22 18:03:13 EST 2021 - Kernal Version
+// 1 SMP Mon Feb 22 18:03:13 EST 2021 - Kernal Version
 // x86_64 - hardware name
 // x86_64 - Processor Type
 // x86_64 - hardware platform
 // GNU/Linux - Operating System
 ```
-
-**********************************************************************************************************************************************************************
 
 #### hostname
 ```bash
