@@ -2,12 +2,13 @@
 ## #!/bin/bash
 
 -  [File_system_hierarchy](https://github.com/naveenkumar0306/bash_shell_scripting/blob/main/bash.md#File_system_hierarchy)
--  [ls](https://github.com/naveenkumar0306/bash_shell_scripting/blob/main/bash.md#ls)
--  [uname](https://github.com/naveenkumar0306/bash_shell_scripting/blob/main/bash.md#uname)
-    - [Print_the_system_information_of_your_Linux_computer](https://github.com/naveenkumar0306/bash_shell_scripting/blob/main/bash.md#Print_the_system_information_of_your_Linux_computer)
--  [hostname](https://github.com/naveenkumar0306/bash_shell_scripting/blob/main/bash.md#hostname)
-    - [Print_hostname](https://github.com/naveenkumar0306/bash_shell_scripting/blob/main/bash.md#Print_hostname)
-    - [Print_ipaddress](https://github.com/naveenkumar0306/bash_shell_scripting/blob/main/bash.md#Print_ipaddress)
+-  [Basic_Commands](https://github.com/naveenkumar0306/bash_shell_scripting/blob/main/bash.md#Basic_Commands)
+    -  [ls](https://github.com/naveenkumar0306/bash_shell_scripting/blob/main/bash.md#ls)
+    -  [uname](https://github.com/naveenkumar0306/bash_shell_scripting/blob/main/bash.md#uname)
+        - [Print_the_system_information_of_your_Linux_computer](https://github.com/naveenkumar0306/bash_shell_scripting/blob/main/bash.md#Print_the_system_information_of_your_Linux_computer)
+    -  [hostname](https://github.com/naveenkumar0306/bash_shell_scripting/blob/main/bash.md#hostname)
+        - [Print_hostname](https://github.com/naveenkumar0306/bash_shell_scripting/blob/main/bash.md#Print_hostname)
+        - [Print_ipaddress](https://github.com/naveenkumar0306/bash_shell_scripting/blob/main/bash.md#Print_ipaddress)
 -  [Environment_Variable](https://github.com/naveenkumar0306/bash_shell_scripting/blob/main/bash.md#Environment_Variable)
     - [print_list_of_environment_variables](https://github.com/naveenkumar0306/bash_shell_scripting/blob/main/bash.md#print_list_of_environment_variables)
     - [set_unset_environment_variable](https://github.com/naveenkumar0306/bash_shell_scripting/blob/main/bash.md#set_unset_environment_variable)
@@ -30,7 +31,8 @@
 /sys        //Kernel data structure for different hardware and device like Block Device, Firmware, ACPI etc. Applicable for Linux based OS only.
 ```
 
-### ls
+### Basic_Commands
+#### ls
 ```
 [naveen.kandhasamy@personalpc01 AKA pc-cbe01 /]$ ls                     // List files and folders in the current directory
 bin  boot  dev  etc  home  lib  lib64  media  mnt  opt  proc  root  run  sbin  srv  sys  tmp  usr  var
