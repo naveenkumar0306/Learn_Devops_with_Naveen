@@ -1,7 +1,7 @@
 # Bash Shell Scripting Cheet Sheet
 ## #!/bin/bash
 
--  [uname](https://github.com/naveenkumar0306/bash_shell_scripting/blob/main/bash.md#uname)
+-  [uname](https://github.com/naveenkumar0306/bash_shell_scripting/blob/main/bash.md#uname) | [hostname](https://github.com/naveenkumar0306/bash_shell_scripting/blob/main/bash.md#hostname)
 -  [hostname](https://github.com/naveenkumar0306/bash_shell_scripting/blob/main/bash.md#hostname)
 -  
 
