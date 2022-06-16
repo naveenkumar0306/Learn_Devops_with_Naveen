@@ -1,7 +1,7 @@
 # Learn Bash Shell Scripting
 ## #!/bin/bash
 
--  [File_system_hierarchy](https://github.com/naveenkumar0306/bash_shell_scripting/blob/main/bash.md#File_system_hierarchy)
+-  [File_system_hierarchy](https://github.com/naveenkumar0306/Learn_Devops_with_Naveen/blob/main/Bash_Shell_Scripting/bash.md#File_system_hierarchy)
 -  [Basic_Commands](https://github.com/naveenkumar0306/bash_shell_scripting/blob/main/bash.md#Basic_Commands)
     -  [ls](https://github.com/naveenkumar0306/bash_shell_scripting/blob/main/bash.md#ls)
     -  [pwd](https://github.com/naveenkumar0306/bash_shell_scripting/blob/main/bash.md#pwd)
