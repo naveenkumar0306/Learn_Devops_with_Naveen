@@ -8,6 +8,7 @@
     - [Print_ipaddress](https://github.com/naveenkumar0306/bash_shell_scripting/blob/main/bash.md#Print_ipaddress)
 -  [Environment_Variable](https://github.com/naveenkumar0306/bash_shell_scripting/blob/main/bash.md#Environment_Variable)
     - [print_list_of_environment_variables](https://github.com/naveenkumar0306/bash_shell_scripting/blob/main/bash.md#print_list_of_environment_variables)
+    - [set_unset_environment_variable](https://github.com/naveenkumar0306/bash_shell_scripting/blob/main/bash.md#set_unset_environment_variable)
 
 ### uname
 #### Print_the_system_information_of_your_Linux_computer
@@ -66,4 +67,17 @@ LESSOPEN=||/usr/bin/lesspipe.sh %s
 XDG_RUNTIME_DIR=/run/user/1157651176
 HISTTIMEFORMAT=%m/%d/%y %T
 _=/usr/bin/env
+```
+
+#### set_unset_environment_variable
+```
+[naveen.kandhasamy@personalpc01 AKA pc-cbe01 bin]$ export JAVA_HOME=/opt/bt/java/jdk1.8.0_311-x86_64        // set JAVA_HOME environment varaiable
+[naveen.kandhasamy@personalpc01 AKA pc-cbe01 bin]$ echo $JAVA_HOME                                          // print JAVA_HOME environment varaiable
+/opt/bt/java/jdk1.8.0_311-x86_64
+[naveen.kandhasamy@personalpc01 AKA pc-cbe01 bin]$ unset JAVA_HOME                                          // unset JAVA_HOME environment varaiable - echo $JAVA_HOME will return empty since JAVA_HOME varaible is removed   
+[naveen.kandhasamy@personalpc01 AKA pc-cbe01 bin]$ echo $PATH                                               // print PATH environment varaiable
+PATH=/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/puppetlabs/bin:/home/naveen.kandhasamy/.local/bin:/home/naveen.kandhasamy/bin
+[naveen.kandhasamy@personalpc01 AKA pc-cbe01 bin]$ export PATH=$PATH:/opt/bt/java/jdk1.8.0_311-x86_64/bin/  // append JAVA bin path to the PATH varaiable
+[naveen.kandhasamy@personalpc01 AKA pc-cbe01 bin]$ echo $PATH                                               // print updated PATH environment varaiable(/opt/bt/java/jdk1.8.0_311-x86_64/bin/ is appended to the PATH varaible)
+PATH=/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/puppetlabs/bin:/home/naveen.kandhasamy/.local/bin:/home/naveen.kandhasamy/bin:/opt/bt/java/jdk1.8.0_311-x86_64/bin/
 ```
