@@ -1,7 +1,9 @@
 # Bash Shell Scripting Cheet Sheet
 ## #!/bin/bash
 
-### hostname
+-  [hostname](https://github.com/naveenkumar0306/bash_shell_scripting/blob/main/bash.md#hostname)
+
+#### hostname
 ```bash
 [naveen.kandhasamy@personalpc01 AKA pc-cbe01 ~]$ hostname       // Displays hostname of the system
 personalpc01.bash.com
