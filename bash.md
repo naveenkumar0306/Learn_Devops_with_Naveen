@@ -1,4 +1,4 @@
-# Practical Bash Shell Scripting
+# Learn Bash Shell Scripting
 ## #!/bin/bash
 
 -  [uname](https://github.com/naveenkumar0306/bash_shell_scripting/blob/main/bash.md#uname)
