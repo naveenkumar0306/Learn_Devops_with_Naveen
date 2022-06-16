@@ -4,6 +4,8 @@
 -  [File_system_hierarchy](https://github.com/naveenkumar0306/bash_shell_scripting/blob/main/bash.md#File_system_hierarchy)
 -  [Basic_Commands](https://github.com/naveenkumar0306/bash_shell_scripting/blob/main/bash.md#Basic_Commands)
     -  [ls](https://github.com/naveenkumar0306/bash_shell_scripting/blob/main/bash.md#ls)
+    -  [pwd](https://github.com/naveenkumar0306/bash_shell_scripting/blob/main/bash.md#pwd)
+    -  [cd](https://github.com/naveenkumar0306/bash_shell_scripting/blob/main/bash.md#cd)
     -  [uname](https://github.com/naveenkumar0306/bash_shell_scripting/blob/main/bash.md#uname)
         - [Print_the_system_information_of_your_Linux_computer](https://github.com/naveenkumar0306/bash_shell_scripting/blob/main/bash.md#Print_the_system_information_of_your_Linux_computer)
     -  [hostname](https://github.com/naveenkumar0306/bash_shell_scripting/blob/main/bash.md#hostname)
@@ -66,6 +68,27 @@ lrwxrwxrwx.    1 root root    7 Apr  7  2021 lib -> usr/lib
 lrwxrwxrwx.    1 root root    8 Apr  7  2021 sbin -> usr/sbin
 drwxr-xr-x.   13 root root  155 Apr  7  2021 usr
 drwxr-xr-x.   21 root root 4.0K Apr 15  2021 var
+```
+
+### pwd
+```
+[naveen.kandhasamy@personalpc01 AKA pc-cbe01 ~]$ pwd                    // print the present working directory
+/etc/puppetlabs/puppet/devices
+```
+
+### cd
+```
+[naveen.kandhasamy@personalpc01 AKA pc-cbe01 ~]$ cd /etc/puppetlabs/puppet/devices           // switch to the particular directory
+[naveen.kandhasamy@personalpc01 AKA pc-cbe01 ~]$ pwd
+/etc/puppetlabs/puppet/devices
+
+[naveen.kandhasamy@personalpc01 AKA pc-cbe01 ~]$ cd ..                                      // switch one folder back from the current directory
+[naveen.kandhasamy@personalpc01 AKA pc-cbe01 ~]$ pwd
+/etc/puppetlabs/puppet
+
+[naveen.kandhasamy@personalpc01 AKA pc-cbe01 ~]$ cd ../../                                  // switch two folder back from the current directory
+[naveen.kandhasamy@personalpc01 AKA pc-cbe01 ~]$ pwd
+/etc/
 ```
 
 ### uname
